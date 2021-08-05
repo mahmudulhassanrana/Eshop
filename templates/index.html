@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+    {% if user.is_authenticated %}
+            {% include 'home.html' %}
+
+    {% else %}
+        {% include 'auth.html' %}
+        {% include 'home.html' %}
+        
+    {% endif %}
+
+{% endblock body %}

@@ -1,0 +1,55 @@
+<div class="modal" tabindex="-1" role="dialog" id = 'myModal'>
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 style="text-align: center;">Welcome to E-Shop</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					  <span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="form-modal">
+				
+						<div class="form-toggle">
+							<button id="login-toggle" onclick="toggleLogin()">log in</button>
+							<button id="signup-toggle" onclick="toggleSignup()">sign up</button>
+						</div>
+						<div id="login-form">
+							<form action = 'login' method = 'POST'>
+                            {% csrf_token %}
+								<input type="text" name = 'username' placeholder="username"/>
+								<input type="password" name = 'password' placeholder="password"/>
+								<input type="submit" class="btn login" value = 'Login'>
+								<p><a href="javascript:void(0)">Forgotten account</a></p>
+								{% comment %} <hr/>
+								<button type="button" class="btn -box-sd-effect"> <i class="fa fa-google fa-lg" aria-hidden="true"></i> sign in with google</button>
+								<button type="button" class="btn -box-sd-effect"> <i class="fa fa-linkedin fa-lg" aria-hidden="true"></i> sign in with linkedin</button>
+								<button type="button" class="btn -box-sd-effect"> <i class="fa fa-windows fa-lg" aria-hidden="true"></i> sign in with microsoft</button> {% endcomment %}
+							</form>
+						</div>
+
+						<div id="signup-form">
+							<form action="register" method="POST">
+								{% csrf_token %}
+								<input type="text" name = 'first_name' placeholder="Enter your first name"/>
+								<input type="text" name = 'last_name' placeholder="Enter your last name"/>
+								<input type="email" name = 'email' placeholder="Enter your email"/>
+								<input type="text" name = 'username' placeholder="Choose username"/>
+								<input type="password" name = 'password1' placeholder="Create password"/>
+								<input type="password" name = 'password2' placeholder="Confirm password"/>
+								<input type="submit" class="btn signup" value = 'Crate account'>
+								<p>Clicking <strong>create account</strong> means that you are agree to our <a href="javascript:void(0)">terms of services</a>.</p>
+								{% comment %} <hr/>
+								<button type="button" class="btn -box-sd-effect"> <i class="fa fa-google fa-lg" aria-hidden="true"></i> sign up with google</button>
+								<button type="button" class="btn -box-sd-effect"> <i class="fa fa-linkedin fa-lg" aria-hidden="true"></i> sign up with linkedin</button>
+								<button type="button" class="btn -box-sd-effect"> <i class="fa fa-windows fa-lg" aria-hidden="true"></i> sign up with microsoft</button> {% endcomment %}
+							</form>
+						</div>
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    

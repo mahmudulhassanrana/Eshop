@@ -1,0 +1,75 @@
+.btn.btn-primary.wd-shop-btn {
+    line-height: 21px!important;
+}
+.orange-bg {
+    background: #f37020 !important;
+}
+.red-bg {
+    background: #bf2228 !important;
+}
+.green-bg {
+    background: #86b816 !important;
+}
+.blue-bg {
+    background: #0065cd !important;
+}
+.yellow-bg{
+     background: #ff9800;
+}
+
+.wd-shop-btn {
+    background: #ff9800;
+    border: 0;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 11px 21px;
+    border: 1px solid;
+    border-color: transparent;
+}
+.pull-right {
+    float: right!important;
+
+}
+.pull-right {
+    float: right;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+}
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.wd-shop-btn:hover {
+    background: white;
+    color: #ff9800;
+    border-color: #fff;
+}
+
+
+
+body {
+    font-family: 'Hind', sans-serif;
+    color: #4A4E5A;
+    overflow-x: hidden;
+}
